@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="gene.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&family=Teko&display=swap">
+    <title>Character Prompt Generator</title>
+</head>
+
+<body>
+    <header>
+        <h2>Character Concept Gen Prototype</h2>
+    </header>
+
+    <div class="container-1">
+        <div class="char-box" id="char-box">
+            <div>
+                <h4 id="name-el"></h4>
+            </div>
+
+            <div id="sp-box">
+                <p id="species-el"></p>
+            </div>
+
+            <div id="loc-box">
+                <p id="origin-el"></p>
+            </div>
+
+            <div id="it-box">
+                <p id="item-el"></p>
+            </div>
+
+            <div id="cl-box">
+                <p id="clothing-el"></p>
+            </div>
+
+            <div id="pt-box">
+                <p id="pet-el"></p>
+            </div>
+        </div>
+        <div class="options-box">
+            <div><button class="generate-btn" onclick="generate()">Generate</button></div>
+            <div class="op-flex">
+                <div class="option">
+                    <p>Species:</p>
+                    <button class="option-btn" id="anthro-btn">Anthro</button>
+                    <button class="option-btn" id="mythic-btn">Mythic</button>
+                </div>
+
+                <div class="option">
+                    <p>Locale:</p>
+                    <button class="option-btn" id="modern-loc-btn">Modern</button>
+                    <button class="option-btn" id="mythic-loc-btn">Mythic</button>
+                </div>
+
+                <div class="option">
+                    <p>Wield:</p>
+                    <button class="option-btn" id="weapon-btn">Weapon</button>
+                    <button class="option-btn" id="item-btn">Item</button>
+                </div>
+
+                <div class="option">
+                    <p>Fashion:</p>
+                    <button class="option-btn" id="modern-fash-btn">Modern</button>
+                    <button class="option-btn" id="fantasy-fash-btn">Old Era</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hide-section">
+        <div class="hide-box">
+            <p>Species</p>
+            <button class="hide-btn" id="hide-species"></button>
+            <button class="swap-btn" id="swap-spec" class="swap-btn">swap</button>
+        </div>
+        <div class="hide-box">
+            <p>Locale</p>
+            <button class="hide-btn" id="hide-locale"></button>
+            <button class="swap-btn" id="swap-loc" class="swap-btn">swap</button>
+        </div>
+        <div class="hide-box">
+            <p>Wield</p>
+            <button class="hide-btn" id="hide-item"></button>
+            <button class="swap-btn" id="swap-item" class="swap-btn">swap</button>
+        </div>
+        <div class="hide-box">
+            <p>Fashion</p>
+            <button class="hide-btn" id="hide-fashion"></button>
+            <button class="swap-btn" id="swap-fash" class="swap-btn">swap</button>
+        </div>
+        <div class="hide-box">
+            <p>Pet</p>
+            <button class="hide-btn" id="hide-pet"></button>
+            <button class="swap-btn" id="swap-pet" class="swap-btn">swap</button>
+        </div>
+
+    </div>
+
+    </div>
+
+    
+
+    <script src="gene.js"></script>
+</body>
+
+</html>

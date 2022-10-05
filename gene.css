@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+
+    text-align: center;
+}
+
+header {
+    margin: auto;
+    height: 75px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    width: 100%;
+    font-family: monospace;
+    background: #222a2f;
+    color: #fff;
+}
+
+button {
+    font-family: monospace;
+    font-size: 15px;
+
+}
+
+.container-1 {
+    margin: auto;
+    max-width: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.char-box {
+    background-color: #fff;
+
+    height: 390px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 0 1em;
+    padding: 2em;
+
+    border: #2ab solid 2px;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.char-box p,
+.char-box h4 {
+    margin-bottom: 1em;
+}
+
+.char-box p {
+    font-size: 16px;
+}
+
+.char-box h4 {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.options-box {
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.op-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.generate-btn,
+.option-btn,
+.hide-btn {
+    color: #fff;
+    border: solid #fff 1.5px;
+    border-radius: 10px;
+}
+
+.option-btn,
+.hide-btn {
+    background: #2ab;
+}
+
+.option-btn {
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+.generate-btn {
+    padding: .8rem 1.6rem;
+    background: #592;
+    font-weight: bold;
+
+}
+
+.generate-btn:active {
+    background: #08b;
+}
+
+.option {
+    margin: 10px;
+    width: 220px;
+}
+
+.option-btn {
+    padding: .5rem 1rem;
+}
+
+.option p {
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+.hide-section {
+    margin: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hide-box {
+    text-align: center;
+    margin: 0 1em 1em;
+}
+
+.hide-box p {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.hide-btn {
+    height: 20px;
+    width: 20px;
+}
+
+.swap-btn {
+    padding: .5rem 1rem;
+}
+
+@media (max-width: 320px) {
+    .char-box p {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width:670px) {
+    .container-1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .char-box {
+        height: 370px;
+        width: 50%;
+        max-width: 450px;
+    }
+
+    .options-box {
+        width: 35%;
+        max-width: 235px;
+        margin-left: 1em;
+    }
+
+    .option p {
+        font-size: 15px;
+    }
+}
