@@ -13,11 +13,11 @@
 
 <body>
     <header>
-        <h2>Character Concept Gen Prototype</h2>
+        <h2>Character Concept Generator</h2>
     </header>
 
-    <div class="container-1">
-        <div class="char-box" id="char-box">
+    <section class="container-1">
+        <div class="char--cont" id="char-box">
             <div>
                 <h4 id="name-el"></h4>
             </div>
@@ -42,9 +42,9 @@
                 <p id="pet-el"></p>
             </div>
         </div>
-        <div class="options-box">
-            <div><button class="generate-btn" onclick="generate()">Generate</button></div>
-            <div class="op-flex">
+        <div class="options--cont">
+            <button class="generate-btn" onclick="generate()">Generate</button>
+            <div class="options--box">
                 <div class="option">
                     <p>Species:</p>
                     <button class="option-btn" id="anthro-btn">Anthro</button>
@@ -71,39 +71,38 @@
             </div>
         </div>
 
-        <div class="hide-section">
-        <div class="hide-box">
-            <p>Species</p>
-            <button class="hide-btn" id="hide-species"></button>
-            <button class="swap-btn" id="swap-spec" class="swap-btn">swap</button>
-        </div>
-        <div class="hide-box">
-            <p>Locale</p>
-            <button class="hide-btn" id="hide-locale"></button>
-            <button class="swap-btn" id="swap-loc" class="swap-btn">swap</button>
-        </div>
-        <div class="hide-box">
-            <p>Wield</p>
-            <button class="hide-btn" id="hide-item"></button>
-            <button class="swap-btn" id="swap-item" class="swap-btn">swap</button>
-        </div>
-        <div class="hide-box">
-            <p>Fashion</p>
-            <button class="hide-btn" id="hide-fashion"></button>
-            <button class="swap-btn" id="swap-fash" class="swap-btn">swap</button>
-        </div>
-        <div class="hide-box">
-            <p>Pet</p>
-            <button class="hide-btn" id="hide-pet"></button>
-            <button class="swap-btn" id="swap-pet" class="swap-btn">swap</button>
+        <div class="hide--box">
+            <div class="hide-option">
+                <p>Species</p>
+                <button class="hide-btn" id="hide-species"></button>
+                <button class="swap-btn" id="swap-spec" class="swap-btn">swap</button>
+            </div>
+            <div class="hide-option">
+                <p>Locale</p>
+                <button class="hide-btn" id="hide-locale"></button>
+                <button class="swap-btn" id="swap-loc" class="swap-btn">swap</button>
+            </div>
+            <div class="hide-option">
+                <p>Wield</p>
+                <button class="hide-btn" id="hide-item"></button>
+                <button class="swap-btn" id="swap-item" class="swap-btn">swap</button>
+            </div>
+            <div class="hide-option">
+                <p>Fashion</p>
+                <button class="hide-btn" id="hide-fashion"></button>
+                <button class="swap-btn" id="swap-fash" class="swap-btn">swap</button>
+            </div>
+            <div class="hide-option">
+                <p>Pet</p>
+                <button class="hide-btn" id="hide-pet"></button>
+                <button class="swap-btn" id="swap-pet" class="swap-btn">swap</button>
+            </div>
         </div>
 
-    </div>
+    </section>
+    <section class="container-2">
 
-    </div>
-
-    
-
+    </section>
     <script src="gene.js"></script>
 </body>
 
