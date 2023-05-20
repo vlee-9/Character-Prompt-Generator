@@ -3,44 +3,55 @@
     box-sizing: border-box;
 }
 
-header {
-    min-height: 75px;
-    color: #fff;
-    text-align: center;
+header,
+footer,
+.option p,
+.hide-option p {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header h2 {
-    font-size: 30px;
+header,
+footer,
+.char--cont,
+.option-btn {
+    color: #fff;
 }
+
+
+header {
+    min-height: 75px;
+    text-align: center;
+    font-family: 'Vina Sans', cursive;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+footer {
+    margin: auto;
+    min-height: 50px;
+    font-size: 15px;
+}
+
 
 body {
     width: 100%;
     font-family: monospace;
     background: #aaa;
-    background-image: 
-    linear-gradient(
-        -45deg,
-        transparent 75%,
-        #999 75%
-    ),
-    linear-gradient(
-        45deg,
-        transparent 75%,
-        #999 75%
-    ),
-    linear-gradient(
-        135deg,
-        transparent 75%,
-        #999 75%
-    ),
-    linear-gradient(
-        -135deg,
-        transparent 75%,
-        #999 75%
-    );
+    background-image:
+        linear-gradient(-45deg,
+            transparent 75%,
+            #999 75%),
+        linear-gradient(45deg,
+            transparent 75%,
+            #999 75%),
+        linear-gradient(135deg,
+            transparent 75%,
+            #999 75%),
+        linear-gradient(-135deg,
+            transparent 75%,
+            #999 75%);
     background-size: 160px 160px;
     background-position: 80px 0, 80px 0, 0 0, 0 0;
 }
@@ -63,14 +74,12 @@ button {
 .char--cont {
     min-height: 320px;
     padding: 0 20px;
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     background: #ddd;
-    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .options--cont {
@@ -114,18 +123,19 @@ button {
 .option p,
 .hide-option p {
     grid-column: 1/-1;
+    font-size: 15px;
+}
+
+.hide--box {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-column: 1/-1;
+    flex-wrap: wrap;
 }
 
 .option button:first-of-type {
-    border-right: #fff solid 5px;
+    margin-right: 5px;
 }
 
-.option-btn {
-    color: #fff;
-}
 
 .option-btn,
 .hide-btn {
@@ -145,36 +155,63 @@ button {
 .swap-btn,
 .generate-btn {
     background: #e95;
+    color: #000;
 }
 
-.hide--box {
-    display: flex;
-    grid-column: 1/-1;
-    flex-wrap: wrap;
+.generate-btn:active,
+.option-btn:active,
+.swap-btn:active,
+.hide-btn:active {
+    filter: brightness(.90);
 }
+
 
 @media (min-width: 670px) {
+
+    header,
+    .container-1,
+    footer {
+        max-width: 1000px;
+    }
 
     header {
         margin: auto;
         min-width: 670px;
-        max-width: 800px;
-        height: 105px;
-        
+        height: 125px;
+        font-size: 60px;
+
     }
 
     .container-1 {
-        max-width: 800px;
+        border-radius: 10px;
+        overflow: hidden;
         grid-template-columns: minmax(300px, 1fr) 280px;
         grid-template-rows: minmax(75px, 475px) 60px;
     }
 
     .char--cont {
-        font-size: 25px;
+        font-size: 20px;
         padding: 0 40px;
     }
 
     .options--cont {
         grid-template-rows: minmax(40px, 60px) 1fr;
+    }
+
+
+}
+
+@media (min-width: 1010px) {
+
+    header {
+        justify-content: normal;
+    }
+
+    .char--cont{
+        font-size: 25px;
+    }
+
+    footer p {
+        margin-left: auto;
     }
 }

@@ -1,3 +1,5 @@
+const container2 = document.getElementById("cont-2")
+
 const name1 = document.getElementById("name-el")
 const species = document.getElementById("species-el")
 const origin1 = document.getElementById("origin-el")
@@ -303,14 +305,14 @@ function getSpecies() {
 }
 
 function getLocation() {
-    origin1.textContent = `who hails from The`
+    origin1.textContent = `- Hails from The`
     getlocAdj1()
     origin1.textContent += ` ${locationArr[Math.floor(Math.random() * locationArr.length)]} of`
     getlocAdj2()
 }
 
 function getItem() {
-    item1.textContent = `They wield a`
+    item1.textContent = `- They wield a`
     getItemAdj()
 
     if (weaponCheck === true && itemCheck === false) {
@@ -330,7 +332,7 @@ function getItem() {
 }
 
 function getFashion() {
-    clothing.textContent = `and are adorned with a`
+    clothing.textContent = `- Adorned with a`
     getFashionAdj()
 
     if (modernFnCheck === true && oldFnCheck === false) {
@@ -359,7 +361,7 @@ function getFashion() {
 
 }
 function getCompanion() {
-    pet1.textContent = `accompanied by their`
+    pet1.textContent = `- Accompanied by their`
     pet1.textContent += ` 
 ${phySpecies[Math.floor(Math.random() * phySpecies.length)]} 
 ${petSpecies[Math.floor(Math.random() * petSpecies.length)]} 
